@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640">
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9a3e0"/><stop offset="0.45" stop-color="#f1b9c9"/><stop offset="0.8" stop-color="#fbd9a8"/></linearGradient>
+  <linearGradient id="lake" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3c6b5"/><stop offset="1" stop-color="#7f8fc9"/></linearGradient>
+  <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#fff6d6"/><stop offset="0.6" stop-color="#ffe3a1"/><stop offset="1" stop-color="#ffe3a1" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="960" height="640" fill="url(#sky)"/>
+<circle cx="640" cy="330" r="150" fill="url(#sun)"/>
+<circle cx="640" cy="330" r="54" fill="#fff3cc"/>
+<g fill="#ffffff" opacity="0.55"><ellipse cx="200" cy="130" rx="120" ry="22"/><ellipse cx="260" cy="150" rx="90" ry="16"/><ellipse cx="760" cy="90" rx="100" ry="18"/></g>
+<polygon points="0,380 120,300 210,350 330,250 470,360 560,320 700,380 820,290 960,370 960,640 0,640" fill="#8f98d4"/>
+<polygon points="0,430 160,360 300,420 450,350 610,430 780,370 960,430 960,640 0,640" fill="#a7c4a3"/>
+<rect x="0" y="440" width="960" height="200" fill="url(#lake)"/>
+<g fill="#fff3cc" opacity="0.6"><rect x="580" y="452" width="120" height="8" rx="4"/><rect x="598" y="472" width="84" height="7" rx="3"/><rect x="612" y="490" width="56" height="6" rx="3"/></g>
+<polygon points="0,520 140,470 300,540 460,500 640,560 820,500 960,540 960,640 0,640" fill="#5f7a74"/>
+<g fill="#3f5551"><polygon points="90,520 118,430 146,520"/><polygon points="130,525 154,450 178,525"/><polygon points="800,520 830,420 860,520"/><polygon points="850,525 876,455 902,525"/></g>
+<polygon points="0,590 200,548 420,600 700,560 960,598 960,640 0,640" fill="#34473f"/>
+</svg>

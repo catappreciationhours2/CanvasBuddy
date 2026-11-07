@@ -1,0 +1,17 @@
+{
+ "analysis": {"image_type":"still_life","medium":"charcoal and white chalk on gray paper","complexity":"intermediate","confidence":0.8,"subject":"human skull, three-quarter view, lit from upper left","summary":"A skull turned three-quarters left, lit from the upper left so the right side falls into a deep cast shadow. The big forms are the cranium dome and the jaw; the eye sockets and nose are the darkest accents.","uncertainties":["Exact tooth count is hard to see"]},
+ "learning_goal":"Build a skull from its big forms, then model it with a few tonal steps",
+ "strategy":"form_then_value","buddy_intro":"Let’s build the skull from two big forms first, then carve the sockets and shade.",
+ "composition":{"focal_point":[0.3,0.45],"anchors":[{"label":"left eye socket","xy":[0.2,0.43]}],"notes":"Light from the upper left"},
+ "steps":[
+  {"id":"s1","title":"Place the cranium and jaw","phase":"gesture","instruction":"Lightly draw the cranium dome (shape 1) and the lower jaw (shape 2) as two big ovals.","why":"Two big forms fix the size and angle before any detail.","tip":"Use the side of the charcoal stick, very light pressure.","brush":"charcoal","size_hint":"large","technique":"gesture_drawing",
+   "guides":[{"kind":"feature","label":"cranium dome","box":[0.17,0.1,0.82,0.66]},{"kind":"feature","label":"lower jaw","box":[0.1,0.66,0.55,0.93]}]},
+  {"id":"s2","title":"Mark the eye sockets and nose","phase":"landmarks","instruction":"Mark the two eye sockets (shapes 1–2) and the nasal opening (shape 3) as simple dark shapes.","why":"The sockets and nose set the face’s proportions; everything else hangs off them.","tip":"Keep them slightly smaller than you think — you can widen them later.","brush":"charcoal","size_hint":"medium","technique":"proportion_checking",
+   "guides":[{"kind":"feature","label":"right eye socket","box":[0.35,0.33,0.5,0.47],"expect":"dark","snap":"D2"},{"kind":"feature","label":"left eye socket","box":[0.12,0.35,0.26,0.52],"expect":"dark"},{"kind":"feature","label":"nasal opening","box":[0.21,0.42,0.31,0.57],"expect":"dark"},{"kind":"feature","label":"upper teeth row","box":[0.13,0.62,0.4,0.72],"shape":"rect","expect":"light"}]},
+  {"id":"s3","title":"Block in the cast shadow","phase":"shadow","instruction":"Fill shape 1 with your darkest tone, pressing firmly, and give shape 2 a medium tone.","why":"The darkest shapes set the contrast every other tone is judged against.","tip":"Squint — the shadow joins into one shape.","brush":"charcoal","size_hint":"large","technique":"value_grouping",
+   "guides":[{"kind":"shade","label":"cast shadow","snap":"D1","tone":"darkest","action":"fill","strength":3},{"kind":"shade","label":"shadow under the jaw","box":[0.1,0.82,0.6,0.97],"tone":"mid","action":"hatch","strength":1}]},
+  {"id":"s4","title":"Lift out the lights","phase":"highlight","instruction":"Pull light out of the forehead (shape 1) and cheekbone (shape 2) with the eraser.","why":"Lights read brightest next to deep darks.","tip":"Press a kneaded eraser, do not rub.","brush":"eraser","size_hint":"small","technique":"edge_hierarchy",
+   "guides":[{"kind":"shade","label":"forehead highlight","box":[0.25,0.14,0.5,0.28],"tone":"highlight","action":"lift","strength":2},{"kind":"shade","label":"cheekbone highlight","box":[0.3,0.5,0.45,0.6],"tone":"light","action":"lift","strength":1}]}
+ ],
+ "tips":[{"title":"Squint","body":"Squint to merge details into big shapes.","topic":"value"}]
+}
